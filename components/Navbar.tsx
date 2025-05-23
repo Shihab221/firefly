@@ -52,7 +52,7 @@ const Navbar = () => {
             placeholder="Search"
             className="border border-gray-300 rounded-full px-6 py-2 w-full pl-10 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
-          <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-emerald-400 " size={20} />
+          <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-emerald-500 " size={20} />
         </div>
         <Link href="/cart">
           

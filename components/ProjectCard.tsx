@@ -23,7 +23,7 @@ export interface ProductCardProps {
 const ProjectCard = ({name, price, rating,  image, time , totalDelivered, components}: ProductCardProps) => {
   return (
     <motion.div 
-    className='flex flex-col items-start rounded-lg text-neutral-900 bg-white'
+    className='flex flex-col items-start rounded-lg text-neutral-900 bg-white w-full sm:w-[300px] '
     initial={{opacity:0 , y:50}}
     whileInView={{opacity:1 , y:0}}
     transition={{duration:0.3}}
@@ -47,7 +47,7 @@ const ProjectCard = ({name, price, rating,  image, time , totalDelivered, compon
         <p className='font-semibold mt-2'>{name}</p>
         <div className='flex flex-row items-center'>
         {[...Array(5)].map((_, i) => (
-          <FaStar key={i} size={14} className='text-emerald-400'/>
+          <FaStar key={i} size={14} className='text-emerald-500'/>
         ))}
             <p className='text-xs px-1'>({rating})</p>
         </div>
