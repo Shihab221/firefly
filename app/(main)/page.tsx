@@ -1,9 +1,14 @@
+import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import Image from "next/image";
 
 export default function Home() {
   return (
    <div>
-    <h2 className="text-red-500">Shiku</h2>
+    <Hero />
+    <div className="px-10 sm:px-20">
+      <Projects />
+    </div>
    </div>
   );
 }

@@ -50,9 +50,9 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search"
-            className="border border-gray-300 rounded-full px-6 py-2 w-full pl-10 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-violet-500"
+            className="border border-gray-300 rounded-full px-6 py-2 w-full pl-10 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
-          <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-violet-500 " size={20} />
+          <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-emerald-400 " size={20} />
         </div>
         <Link href="/cart">
           
@@ -90,10 +90,7 @@ const Navbar = () => {
         <div className='flex flex-row '>
 
         
-        <div className='bg-neutral-900 flex flex-row justify-between items-center w-72'>
-          <p className='text-center px-4 py-2'>Browse Categories</p>
-          <BiArrowFromTop size={16} className='text-white mx-4'/>
-        </div>
+        
 
         <div className='flex flex-row justify-between w-full sm:pl-20'>
           {navbarData.map((item, index) => (
