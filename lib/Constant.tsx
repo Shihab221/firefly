@@ -23,7 +23,7 @@ export const ProjectsData = [
   {
     id: 2,
     name: "Line Following Robot",
-    image: "/images/line-follower.jpg",
+    image: "/images/line-follower.webp",
     price: 2000,
     rating: 4.2,
     description:

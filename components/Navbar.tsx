@@ -16,13 +16,13 @@ const navbarData = [
     {title:"Big sale", url:"#" },
     {title:"Clearance Sale", url:"#" },
     {title:"Discover", url:"#" },
-    {title:"About Keedos", url:"#" },
+    {title:"About Fiftech", url:"#" },
 ]
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className='w-full px-5 sm:px-20'>
+    <div className='w-full px-5 sm:px-20 font-orbitron'>
       {/* search bar */}
       <div className='flex flex-row items-center justify-between py-2'>
         <Image 
@@ -94,7 +94,7 @@ const Navbar = () => {
 
         <div className='flex flex-row justify-between w-full sm:pl-20'>
           {navbarData.map((item, index) => (
-            <div key={index} className='flex flex-row items-center justify-between py-2 hover:font-semibold cursor-pointer'>
+            <div key={index} className='flex flex-row items-center  justify-between py-2 hover:font-bold cursor-pointer'>
                 <p className='text-neutral-900 text-md'>{item.title}</p>
             </div>
           ))}
