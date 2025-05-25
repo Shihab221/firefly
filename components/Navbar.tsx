@@ -1,11 +1,10 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { FaSearch, FaBars, FaCross } from 'react-icons/fa';
-import { BiArrowFromTop } from 'react-icons/bi';
+import { FaSearch, } from 'react-icons/fa';
 import Sidebar from './Sidebar';
 import { IoClose, IoMenu } from 'react-icons/io5';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const navbarData = [
@@ -20,8 +19,7 @@ const navbarData = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full px-5 sm:px-20 font-orbitron">
-      {/* search bar */}
+    <div className="w-full px-2  sm:px-20 font-orbitron">
       <div className="flex flex-row items-center justify-between py-2">
         <Image
           src="/images/logo.jpg"
@@ -60,7 +58,7 @@ const Navbar = () => {
           />
         </div>
         <Link href="/bookproject">
-          <button className="bg-gradient-to-r from-emerald-300 to-orange-200  px-2 sm:px-6 py-2 rounded cursor-pointer text-sm sm:text-md sm:block hidden text-neutral-600 font-bold hover:scale-105 hover:shadow-md duration-200">
+          <button className="bg-gradient-to-r from-emerald-300 to-orange-200  px-2 sm:px-6 py-0 sm:py-2 rounded cursor-pointer text-sm sm:text-md  text-neutral-600 font-bold hover:scale-105 hover:shadow-md duration-200">
             Book Project
           </button>
         </Link>
