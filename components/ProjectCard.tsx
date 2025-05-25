@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
@@ -42,13 +42,15 @@ const ProjectCard = ({
         height={100}
         className="object-cover w-[300px] h-[220px] bg-white rounded-md"
       />
-      <div className='px-4 py-4'>
+      <div className="px-4 py-4">
         <p className="font-semibold font-orbitron">{name}</p>
         <div className="flex flex-row items-center">
           {[...Array(5)].map((_, i) => (
             <FaStar key={i} size={14} className="text-emerald-500" />
           ))}
-          <p className="text-sm px-1 font-bold">({rating} <span className='text-lg'>+</span>)</p>
+          <p className="text-sm px-1 font-bold">
+            ({rating} <span className="text-lg">+</span>)
+          </p>
         </div>
         <div className="flex flex-row items-center gap-4 ">
           <p className="font-bold text-start ">{price} Tk</p>

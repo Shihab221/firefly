@@ -19,9 +19,9 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif,var(--font-roboto), var(--font-poppins);
-  font-family:var(--font-roboto);
-  
+  font-family:
+    Arial, Helvetica, sans-serif, var(--font-roboto), var(--font-poppins);
+  font-family: var(--font-roboto);
 }
 .font-roboto {
   font-family: var(--font-roboto);

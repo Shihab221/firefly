@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React from 'react';
 import { useParams } from 'next/navigation';
 import { ProjectsData } from '@/lib/Constant';
@@ -15,7 +15,9 @@ const Page = () => {
     return <p className="text-red-500 text-center mt-10">Invalid product ID</p>;
   }
 
-  const product = ProjectsData.find(item => item.id === parseInt(productId, 10));
+  const product = ProjectsData.find(
+    (item) => item.id === parseInt(productId, 10)
+  );
   if (!product) {
     return <p className="text-red-500 text-center mt-10">Product not found</p>;
   }
@@ -25,22 +27,22 @@ const Page = () => {
       <div className="flex flex-col sm:flex-row gap-10 ">
         {/* Image Section */}
         <div className="flex flex-row justify-between gap-4 w-2/3">
-          <div className='flex flex-col gap-4'>
+          <div className="flex flex-col gap-4">
             <Image
-                src={product.image}
-                alt="product_image"
-                width={200}
-                height={200}
-                className="w-42 object-contain"
-                unoptimized
+              src={product.image}
+              alt="product_image"
+              width={200}
+              height={200}
+              className="w-42 object-contain"
+              unoptimized
             />
             <Image
-                src={product.image}
-                alt="product_image"
-                width={200}
-                height={200}
-                className="w-42 object-contain"
-                unoptimized
+              src={product.image}
+              alt="product_image"
+              width={200}
+              height={200}
+              className="w-42 object-contain"
+              unoptimized
             />
           </div>
           <Image
@@ -54,7 +56,7 @@ const Page = () => {
         </div>
 
         {/* Details Section */}
-        <div className="text-neutral-900 flex flex-col gap-4 w-1/3">
+        <div className="text-neutral-900 flex flex-col justify-between gap-4 w-1/3 font-orbitron">
           <h2 className="font-semibold text-2xl">{product.name}</h2>
 
           <div className="flex flex-row gap-2 items-center text-xl border-b border-neutral-400 pb-4">
@@ -68,12 +70,14 @@ const Page = () => {
               {[...Array(5)].map((_, i) => (
                 <FaStar key={i} size={14} className="text-emerald-500" />
               ))}
-              <span className="text-sm text-neutral-600 ml-2">({product.rating})</span>
+              <span className="text-sm text-neutral-600 ml-2">
+                ({product.rating} +)
+              </span>
             </div>
           </div>
 
           {/* Description */}
-          <p className="text-sm text-neutral-800 text-justify">
+          <p className="text-sm text-neutral-800 text-justify font-roboto">
             {product.description}
           </p>
 
@@ -95,7 +99,7 @@ const Page = () => {
       </div>
 
       {/* Additional Details */}
-      <div className="flex flex-col gap-4 mt-10">
+      <div className="flex flex-col gap-4 mt-10 ">
         <h4 className="font-semibold text-xl text-neutral-900">Details:</h4>
         <p className="text-md text-neutral-800 text-justify leading-relaxed">
           {Array(3).fill(product.description).join('\n\n')}
