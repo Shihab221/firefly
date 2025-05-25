@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div className=" bg-neutral-900">
       {/* top four options */}
-      <div className="flex flex-row justify-between items-center text-white py-5 px-5 sm:px-20 font-orbitron font-bold">
+      <div className="flex flex-row justify-between items-center text-white py-5 px-10 sm:px-20 font-orbitron font-bold">
         <li className="flex flex-col items-center justify-center gap-2 ">
           <AiOutlineSecurityScan size={36} className="text-emerald-500" />
           <h4 className="text-emerald-500">Smart Security</h4>

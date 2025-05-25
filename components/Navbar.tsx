@@ -19,7 +19,7 @@ const navbarData = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full px-2  sm:px-20 font-orbitron">
+    <div className="w-full px-2 sm:px-20 font-orbitron">
       <div className="flex flex-row items-center justify-between py-2">
         <Image
           src="/images/logo.jpg"

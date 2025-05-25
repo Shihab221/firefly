@@ -26,37 +26,38 @@ const Page = () => {
     <div className="px-10 py-10 sm:px-20 min-h-screen flex-col">
       <div className="flex flex-col sm:flex-row gap-10 ">
         {/* Image Section */}
-        <div className="flex flex-row justify-between gap-4 w-2/3">
-          <div className="flex flex-col gap-4">
+        <div className="flex flex-col sm:flex-row justify-between gap-4 w-full sm:w-2/3">
+          <div className="flex flex-row sm:flex-col gap-3">
             <Image
               src={product.image}
               alt="product_image"
-              width={200}
-              height={200}
-              className="w-42 object-contain"
+              width={100}
+              height={100}
+              className="w-40 object-contain"
               unoptimized
             />
             <Image
               src={product.image}
               alt="product_image"
-              width={200}
-              height={200}
-              className="w-42 object-contain"
+              width={100}
+              height={100}
+              className="w-40 object-contain"
               unoptimized
             />
+            
           </div>
           <Image
             src={product.image}
             alt="product_image"
             width={640}
             height={500}
-            className="object-contain"
+            className="w-full object-contain"
             unoptimized
           />
         </div>
 
         {/* Details Section */}
-        <div className="text-neutral-900 flex flex-col justify-between gap-4 w-1/3 font-orbitron">
+        <div className="text-neutral-900 flex flex-col justify-between gap-4 w-full sm:w-1/3 font-orbitron">
           <h2 className="font-semibold text-2xl">{product.name}</h2>
 
           <div className="flex flex-row gap-2 items-center text-xl border-b border-neutral-400 pb-4">
