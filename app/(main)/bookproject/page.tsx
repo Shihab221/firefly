@@ -71,7 +71,7 @@ const page = () => {
             <div>
             <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-emerald-300 to-orange-300 hover:bg-emerald-700 text-neutral-700 font-semibold py-2 transition-all duration-200 font-orbitron"
+                className="w-full bg-gradient-to-r from-emerald-300 to-orange-300 hover:bg-emerald-700 text-neutral-700 font-semibold py-2 transition-all duration-200 font-orbitron hover:shadow-md duration-200"
             >
                 Submit Booking
             </button>
