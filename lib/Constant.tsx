@@ -65,7 +65,7 @@ export const ProjectsData = [
   {
     id: 4,
     name: 'Robotic Arm with Joystick',
-    image: '/images/robotic-arm.jpg',
+    image: '/images/robotic-arm.webp',
     price: 4500,
     rating: 4.8,
     description:

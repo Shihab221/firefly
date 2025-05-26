@@ -33,7 +33,7 @@ const Page = () => {
               alt="product_image"
               width={100}
               height={100}
-              className="w-40 object-contain"
+              className="w-40 object-cover"
               unoptimized
             />
             <Image
@@ -41,7 +41,7 @@ const Page = () => {
               alt="product_image"
               width={100}
               height={100}
-              className="w-40 object-contain"
+              className="w-40 object-cover"
               unoptimized
             />
             
@@ -51,7 +51,7 @@ const Page = () => {
             alt="product_image"
             width={640}
             height={500}
-            className="w-full object-contain"
+            className="w-full  object-cover"
             unoptimized
           />
         </div>
