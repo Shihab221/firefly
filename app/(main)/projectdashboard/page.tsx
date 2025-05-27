@@ -1,3 +1,4 @@
+import Graph from '@/components/Graph'
 import Toolbar from '@/components/Toolbar'
 import React from 'react'
 
@@ -9,8 +10,15 @@ const page = () => {
             <div className=' w-full sm:w-1/4 border shadow-md mx-auto'>
                 <Toolbar />
             </div>
-            <div className='bg-white w-full sm:w-3/4 border p-6 shadow-md mx-auto'>
+            <div className='bg-white w-full sm:w-3/4 border p-6 shadow-md mx-auto flex flex-col sm:flex-row'>
                 <h4 className='font-orbitron font-bold text-orange-500 mb-4'>Data</h4>
+                <div className='w-full sm:w-1/2'>
+                    <Graph />
+                </div>
+                <div>
+                    <h4 className='font-orbitron font-bold text-orange-500 mb-4'>Live Temperature</h4>
+                    
+                </div>
             </div>
 
         </div>

@@ -16,6 +16,15 @@ export default {
         roboto: ['var(--font-roboto)', 'sans-serif'],
         orbitron: ['var(--font-orbitron)', 'sans-serif'],
       },
+      keyframes: {
+      slide: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-10px)' },
+        },
+      },
+      animation: {
+        slide: 'slide 0.3s ease-out',
+      },
     },
   },
   plugins: [],
