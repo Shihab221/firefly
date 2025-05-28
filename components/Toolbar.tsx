@@ -21,7 +21,8 @@ const Tools = [
     {
         name: 'Gauge',
         icon: AiOutlineDownCircle,
-    }
+    },
+    
 ]
 const Toolbar = () => {
   return (

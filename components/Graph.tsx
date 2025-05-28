@@ -24,9 +24,9 @@ export default function LiveTempChart() {
   }, []);
 
   return (
-    <div className="flex shadow-md p-4">
+    <div className="flex ">
       <div className="bg-white rounded-xl  w-full ">
-        <h2 className="text-xl font-semibold mb-4">Live Temperature (30s Window)</h2>
+        <h2 className="text-xl font-semibold mb-4 font-orbitron text-emerald-500">Graph </h2>
         <ResponsiveContainer width="100%" height={300}>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
