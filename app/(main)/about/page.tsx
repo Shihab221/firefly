@@ -17,10 +17,10 @@ const profiles = [
 const page = () => {
   return (
     <div className='px-10 sm:px-20 py-10'>
-        <h4 className='font-orbitron text-xl text-orange-500 text-center mb-4 font-bold'>FiFtech Management</h4>
-        <div className='flex flex-row gap-4 items-center justify-evenly'>
+        <h4 className='font-orbitron text-xl text-orange-500 text-center mb-4 font-bold'>Meet FiFtech Team</h4>
+        <div className='flex flex-col sm:flex-row gap-4 items-center justify-evenly'>
         {profiles.map((item,index)=>(
-            <div key={index} className='flex flex-row items-center bg-white shadow-md'>
+            <div key={index} className='flex flex-row items-center bg-white shadow-md '>
                 <Image
                     src={item.image}
                     alt='peofile_image'
@@ -28,7 +28,7 @@ const page = () => {
                     height={100}
                     className='w-32 h-36 object-cover'
                 />
-                <div className='px-4'>
+                <div className='px-4 w-[200px] sm:w-[280px]'>
                     <p className='text-sm font-orbitron'>{item.name}</p>
                     <p className='text-sm font-orbitron'>{item.position}</p>
                     <p className='text-sm font-orbitron'>Projects: {item.project_conducted} +</p>

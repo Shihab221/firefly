@@ -1,14 +1,15 @@
 'use client';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const navbarData = [
-  { title: 'Home', url: '#' },
-  { title: 'Best Sellers', url: '#' },
+  { title: 'Home', url: '/' },
+  { title: 'View Projects', url: '/allprojects' },
   { title: 'New Arrival', url: '#' },
-  { title: 'Big sale', url: '#' },
-  { title: 'Clearance Sale', url: '#' },
-  { title: 'Discover', url: '#' },
-  { title: 'About Keedos', url: '#' },
+  { title: 'PCB Printing', url: '/pcbprinting' },
+  { title: 'Project Booking', url: '/bookproject' },
+  { title: 'Shop', url: '/https://shop-roboflybd.vercel.app/' },
+  { title: 'About Fiftech', url: '/about' },
 ];
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -21,7 +22,9 @@ const Sidebar = () => {
               key={index}
               className="flex flex-row items-center justify-between py-2 hover:font-semibold cursor-pointer"
             >
-              <p className="text-neutral-900 text-md">{item.title}</p>
+              <Link href={`${item.url}`}>
+                  <p className="text-neutral-900 text-md">{item.title}</p>
+                </Link>
             </div>
           ))}
         </div>
