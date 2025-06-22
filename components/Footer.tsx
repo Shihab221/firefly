@@ -54,7 +54,7 @@ const Footer = () => {
             <h4 className="text-emerald-500 font-bold">Support</h4>
             <li>Help Center</li>
             <li>FAQs</li>
-            <li>Returns ussss</li>
+            <li>Return Product</li>
             <li>Shipping </li>
           </ul>
 
@@ -62,7 +62,7 @@ const Footer = () => {
             <h4 className="text-emerald-500 font-bold">Resources</h4>
             <li>Blog</li>
             <li>Community</li>
-            <li>Affiliate Prog</li>
+            <li>Affiliate Program</li>
             <li>Gift Cards</li>
           </ul>
 
@@ -76,12 +76,17 @@ const Footer = () => {
             <li className='flex flex-col items-center '> <AiFillInstagram size={32} className='text-emerald-500 mb-2' /> Instagram</li>
             <li className='flex flex-col items-center '><AiFillYoutube size={32} className='text-emerald-500 mb-2' /> YouTube</li>
           </ul>
+          <div >
+            <h4 className='text-orange-500 font-orbitron font-bold'>Contact</h4>
+            <p className='font-roboto'>+8801300-242759</p>
+            <p className='font-roboto'>+8801770-716570</p>
+          </div>
         </div>
       </div>
 
       <div className="bg-neutral-800 flex flex-row justify-center py-2 font-orbitron">
         <p className="text-neutral-500 text-center text-sm">
-          Copyright - FiFTech 2025 | Developed by - Shiku
+          Copyright @ All rights reserved by <span className='text-neutral-400'> FiFTech 2025</span> | Developed by - ShikuDev
         </p>
       </div>
     </div>

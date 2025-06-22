@@ -13,9 +13,9 @@ export interface ProductCardProps {
   description?: string;
   rating: number;
   image: string;
-  time: string;
+  time: number;
   totalDelivered: number;
-  components: [];
+  components: string[];
 }
 
 const ProjectCard = ({
@@ -54,6 +54,9 @@ const ProjectCard = ({
         </div>
         <div className="flex flex-row items-center gap-4 ">
           <p className="font-bold text-start ">{price} Tk</p>
+          {/* <p>{time}</p>
+          <p>{totalDelivered}</p>
+          <p>{components}</p> */}
         </div>
       </div>
     </motion.div>
