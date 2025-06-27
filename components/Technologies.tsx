@@ -3,7 +3,7 @@ import React from 'react';
 
 const Technologies = () => {
   return (
-    <div className="flex flex-col sm:flex-row">
+    <div className="flex flex-col sm:flex-row py-10">
       <div className="sm:w-1/2 flex flex-col ">
         <Image
           src={'/images/xiao.webp'}
