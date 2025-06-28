@@ -1,4 +1,4 @@
-import Graph from '@/components/Graph'
+// import Graph from '@/components/Graph'
 import Toolbar from '@/components/Toolbar'
 import React from 'react'
 
