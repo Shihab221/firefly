@@ -14,7 +14,7 @@ const page = () => {
                 <h4 className='font-orbitron font-bold text-orange-500 mb-4 text-xl text-center'>Data</h4>
                 <div className='flex flex-col sm:flex-row gap-4'>
                     <div className='w-full sm:w-1/2'>
-                        <Graph />
+                        {/* <Graph /> */}
                     </div>
                     <div>
                         <h4 className='font-orbitron font-bold text-emerald-500 text-xl mb-4'>Numerical Data</h4>
