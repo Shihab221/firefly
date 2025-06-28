@@ -2,7 +2,7 @@ import Graph from '@/components/Graph'
 import Toolbar from '@/components/Toolbar'
 import React from 'react'
 
-const page = ({temp}) => {
+const page = () => {
   return (
     <div className='px-10 sm:px-20 pt-5 pb-10'>
         <h4 className='bg-white font-orbitron w-full py-4 text-center font-semibold mb-4 text-xl  shadow-md'>Welcome to <span className='text-emerald-500'>FiFtech</span> Dashboard</h4>
